@@ -13,7 +13,7 @@ jest.mock('../../src/persistence', () => ({
 
 test('it stores item correctly', async () => {
     const id = 'something-not-a-uuid';
-    const name = 'A sample item';
+    const name = 'A sample things';
     const req = { body: { name } };
     const res = { send: jest.fn() };
 
