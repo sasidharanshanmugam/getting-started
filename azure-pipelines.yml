@@ -34,7 +34,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure for Students(1)(c265050d-99b1-48fa-9276-30834e194abb)'
+    azureSubscription: 'poc-sp'
     appType: 'webApp'
     WebAppName: '291998'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
