@@ -29,7 +29,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'Npm'
+    ArtifactName: 'drop'
     publishLocation: 'Container'
 - task: AzureRmWebAppDeployment@4
   inputs:
