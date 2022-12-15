@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: Taskagent
+  name: poc
 
 steps:
 - task: NodeTool@0
