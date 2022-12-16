@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+- none
 
 pool:
   name: poc
@@ -34,7 +34,9 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'poc-sp'
-    appType: 'webApp'
-    WebAppName: '291998'
+    azureSubscription: 'sp'
+    appType: 'webAppLinux'
+    WebAppName: 'POCAppservice'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    RuntimeStack: 'NODE|14-lts'
+    StartupCommand: 'npm start'
