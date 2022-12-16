@@ -7,7 +7,7 @@ trigger:
 - none
 
 pool:
-  name: poc
+  name: Linux
 
 steps:
 - task: NodeTool@0
