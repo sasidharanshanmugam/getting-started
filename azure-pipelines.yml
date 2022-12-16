@@ -36,6 +36,6 @@ steps:
     azureSubscription: 'sp'
     appType: 'webAppLinux'
     WebAppName: 'POCAppservice'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     RuntimeStack: 'NODE|14-lts'
     StartupCommand: 'npm start'
